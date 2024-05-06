@@ -11,5 +11,11 @@ namespace LMS__FINAL_
         {
             Application.Exit();
         }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.ShowDialog();
+        }
     }
 }
