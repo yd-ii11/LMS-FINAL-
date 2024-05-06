@@ -40,11 +40,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonHighlight;
-            label1.Font = new Font("Segoe UI", 20F);
+            label1.Font = new Font("Segoe UI", 21F);
             label1.ForeColor = SystemColors.ActiveCaption;
             label1.Location = new Point(173, 61);
             label1.Name = "label1";
-            label1.Size = new Size(454, 46);
+            label1.Size = new Size(470, 47);
             label1.TabIndex = 0;
             label1.Text = "Library Management System ";
             // 
