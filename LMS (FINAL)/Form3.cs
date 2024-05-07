@@ -26,5 +26,17 @@ namespace LMS__FINAL_
         {
             this.Close();
         }
+
+        private void btnAddNewBook_Click(object sender, EventArgs e)
+        {
+            if (txtTitle.Text.Trim() == "" || txtAuthor.Text.Trim() == "" ||cmbCategory.Text.Trim() == "")
+            {
+                MessageBox.Show("Please Entre All data anf try again ");
+            }
+            else
+            {
+
+            }
+        }
     }
 }

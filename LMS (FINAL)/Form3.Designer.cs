@@ -99,6 +99,7 @@
             btnAddNewBook.TabIndex = 7;
             btnAddNewBook.Text = "Add new ";
             btnAddNewBook.UseVisualStyleBackColor = true;
+            btnAddNewBook.Click += btnAddNewBook_Click;
             // 
             // btnShowAllBooks
             // 
