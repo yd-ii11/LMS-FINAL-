@@ -74,6 +74,7 @@
             btnAddBook.TabIndex = 2;
             btnAddBook.Text = "AddBook";
             btnAddBook.UseVisualStyleBackColor = false;
+            btnAddBook.Click += btnAddBook_Click;
             // 
             // btnFindStudent
             // 
