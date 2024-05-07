@@ -111,7 +111,7 @@
             btnExist.Name = "btnExist";
             btnExist.Size = new Size(150, 50);
             btnExist.TabIndex = 5;
-            btnExist.Text = "Exist";
+            btnExist.Text = "Exit";
             btnExist.UseVisualStyleBackColor = false;
             btnExist.Click += btnExist_Click;
             // 

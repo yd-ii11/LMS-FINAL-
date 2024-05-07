@@ -89,6 +89,7 @@
             // btnAddNewStudent
             // 
             btnAddNewStudent.BackColor = SystemColors.ActiveCaption;
+            btnAddNewStudent.Cursor = Cursors.Hand;
             btnAddNewStudent.Font = new Font("Segoe UI", 11F);
             btnAddNewStudent.ForeColor = SystemColors.ButtonHighlight;
             btnAddNewStudent.Location = new Point(212, 284);
@@ -97,10 +98,12 @@
             btnAddNewStudent.TabIndex = 7;
             btnAddNewStudent.Text = "Add New";
             btnAddNewStudent.UseVisualStyleBackColor = false;
+            btnAddNewStudent.Click += btnAddNewStudent_Click;
             // 
             // btnShowAllStudent
             // 
             btnShowAllStudent.BackColor = SystemColors.ActiveCaption;
+            btnShowAllStudent.Cursor = Cursors.Hand;
             btnShowAllStudent.Font = new Font("Segoe UI", 11F);
             btnShowAllStudent.ForeColor = SystemColors.ButtonHighlight;
             btnShowAllStudent.Location = new Point(438, 284);
@@ -113,6 +116,7 @@
             // btnExitForm2
             // 
             btnExitForm2.BackColor = SystemColors.ActiveCaption;
+            btnExitForm2.Cursor = Cursors.Hand;
             btnExitForm2.Font = new Font("Segoe UI", 11F);
             btnExitForm2.ForeColor = SystemColors.ButtonHighlight;
             btnExitForm2.Location = new Point(325, 391);
@@ -139,6 +143,7 @@
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             ResumeLayout(false);
             PerformLayout();
