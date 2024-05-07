@@ -25,41 +25,52 @@ namespace LMS__FINAL_
 
         private void btnAddNewStudent_Click(object sender, EventArgs e)
         {
-            if (txtId.Text.Trim() == "" || txtId.Text.Trim() == "" || txtId.Text.Trim() == "")
+            try
             {
-                MessageBox.Show("Please Enter All data and try again ");
-                txtId.Focus();
-            }
-            else 
-            {
-                StreamReader srcheck = new StreamReader("StudentData.txt");
-                string strcheck = srcheck.ReadToEnd();
-                srcheck.Close();
-                if (strcheck.Contains(txtId.Text + ";"))
+                if (txtId.Text.Trim() == "" || txtId.Text.Trim() == "" || txtId.Text.Trim() == "")
                 {
-                    MessageBox.Show("This ID is Exist, Please change And try again");
+                    MessageBox.Show("Please Enter All data and try again ");
                     txtId.Focus();
-                    txtId.SelectAll();
-
                 }
                 else
                 {
-                    StreamWriter sw = new StreamWriter("StudentData.txt", true);
-                    string strStudent = txtId.Text + ";"
-                                      + txtName.Text;
-                    sw.WriteLine(strStudent);
-                    sw.Close();
-                    MessageBox.Show("Student is Added ");
-                    foreach (Control c in this.Controls)
+                    StreamReader srcheck = new StreamReader("StudentData.txt");
+                    string strcheck = srcheck.ReadToEnd();
+                    srcheck.Close();
+                    if (strcheck.Contains(txtId.Text + ";"))
                     {
-                        if (c is TextBox)
-                        {
-                            c.Text = "";
-                        }
+                        MessageBox.Show("This ID is Exist, Please change And try again");
+                        txtId.Focus();
+                        txtId.SelectAll();
+
                     }
-                    txtId.Focus();
+                    else
+                    {
+                        StreamWriter sw = new StreamWriter("StudentData.txt", true);
+                        string strStudent = txtId.Text + ";"
+                                          + txtName.Text;
+                        sw.WriteLine(strStudent);
+                        sw.Close();
+                        MessageBox.Show("Student is Added ");
+                        foreach (Control c in this.Controls)
+                        {
+                            if (c is TextBox)
+                            {
+                                c.Text = "";
+                            }
+                        }
+                        txtId.Focus();
+
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+                
+            
         }
     }
 }
