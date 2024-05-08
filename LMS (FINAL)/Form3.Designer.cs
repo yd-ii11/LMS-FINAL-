@@ -85,6 +85,7 @@
             // cmbCategory
             // 
             cmbCategory.FormattingEnabled = true;
+            cmbCategory.Items.AddRange(new object[] { "Scientific Books", "Religious Books", "Historical Books", "Political Books", "Novels and Stories" });
             cmbCategory.Location = new Point(223, 199);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(151, 28);

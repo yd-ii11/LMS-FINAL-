@@ -30,28 +30,47 @@ namespace LMS__FINAL_
 
         private void btnAddNewBook_Click(object sender, EventArgs e)
         {
-            if (txtTitle.Text.Trim() == "" || txtAuthor.Text.Trim() == "" ||cmbCategory.Text.Trim() == "")
+            
+            try
             {
-                MessageBox.Show("Please Entre All data anf try again ");
-            }
-            else
-            {
-                StreamWriter sw = new StreamWriter("BooksData.txt", true);
-                string strbook = txtTitle.Text + ";"
-                               + txtAuthor.Text + ";"
-                               + cmbCategory.Text;
-                sw.WriteLine(strbook);
-                sw.Close();
-                MessageBox.Show("Book is Added ");
-                foreach (Control c in this.Controls)
+                if (txtTitle.Text.Trim() == "" || txtAuthor.Text.Trim() == "" || cmbCategory.Text.Trim() == "")
                 {
-                    if (c is TextBox)
-                    {
-                        c.Text = "";
-                    }
+                    MessageBox.Show("Please Entre All data and try again ");
                 }
-                txtTitle.Focus();
+                else
+                {
+                    StreamReader srcheck = new StreamReader("BooksData.txt");
+                    string strcheck = srcheck.ReadToEnd();
+                    srcheck.Close();
+                    if (strcheck.Contains(txtTitle.Text + ";"))
+                    {
+                        MessageBox.Show("This Title is Exist, Please change and try again ");
+                    }
+                    else
+                    {
+                        StreamWriter sw = new StreamWriter("BooksData.txt", true);
+                        string strbook = txtTitle.Text + ";"
+                                       + txtAuthor.Text + ";"
+                                       + cmbCategory.Text;
+                        sw.WriteLine(strbook);
+                        sw.Close();
+                        MessageBox.Show("Book is Added ");
+                        foreach (Control c in this.Controls)
+                        {
+                            if (c is TextBox)
+                            {
+                                c.Text = "";
+                            }
+                        }
+                        txtTitle.Focus();
+                    }
 
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
