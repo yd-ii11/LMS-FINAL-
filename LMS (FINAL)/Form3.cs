@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LMS__FINAL_
 {
@@ -35,6 +36,21 @@ namespace LMS__FINAL_
             }
             else
             {
+                StreamWriter sw = new StreamWriter("BooksData.txt", true);
+                string strbook = txtTitle.Text + ";"
+                               + txtAuthor.Text + ";"
+                               + cmbCategory.Text;
+                sw.WriteLine(strbook);
+                sw.Close();
+                MessageBox.Show("Book is Added ");
+                foreach (Control c in this.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        c.Text = "";
+                    }
+                }
+                txtTitle.Focus();
 
             }
         }
