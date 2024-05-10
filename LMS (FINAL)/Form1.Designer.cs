@@ -88,6 +88,7 @@
             btnFindStudent.TabIndex = 3;
             btnFindStudent.Text = "Find Student";
             btnFindStudent.UseVisualStyleBackColor = false;
+            btnFindStudent.Click += btnFindStudent_Click;
             // 
             // btnFindBook
             // 

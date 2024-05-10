@@ -23,5 +23,11 @@ namespace LMS__FINAL_
             Form3 frm3 = new Form3();
             frm3.ShowDialog();
         }
+
+        private void btnFindStudent_Click(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.ShowDialog();
+        }
     }
 }
