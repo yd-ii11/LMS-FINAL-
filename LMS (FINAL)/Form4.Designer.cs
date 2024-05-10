@@ -122,13 +122,14 @@
             // 
             // btnExitForm4
             // 
+            btnExitForm4.BackColor = Color.Red;
             btnExitForm4.Cursor = Cursors.Hand;
             btnExitForm4.Location = new Point(441, 81);
             btnExitForm4.Name = "btnExitForm4";
             btnExitForm4.Size = new Size(109, 29);
             btnExitForm4.TabIndex = 4;
             btnExitForm4.Text = "Exit";
-            btnExitForm4.UseVisualStyleBackColor = true;
+            btnExitForm4.UseVisualStyleBackColor = false;
             btnExitForm4.Click += btnExitForm4_Click;
             // 
             // lblStudentFindId

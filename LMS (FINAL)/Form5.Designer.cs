@@ -118,13 +118,14 @@
             // 
             // btnExit
             // 
+            btnExit.BackColor = Color.Red;
             btnExit.Cursor = Cursors.Hand;
             btnExit.Location = new Point(533, 81);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(111, 63);
             btnExit.TabIndex = 10;
             btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
             // lblCategory

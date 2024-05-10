@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LMS__FINAL_
 {
@@ -25,7 +26,7 @@ namespace LMS__FINAL_
         private void btnFindBook_Click(object sender, EventArgs e)
         {
            try
-            {
+           {
                 if (txtFindBook.Text.Trim() != "")
                 {
                     StreamReader sr = new StreamReader("BooksData.txt");
@@ -58,17 +59,18 @@ namespace LMS__FINAL_
                         txtFindBook.Focus();
                         txtFindBook.SelectAll();
                     }
+
                 }
                 else
                 {
                     MessageBox.Show("Please Enter ISBN and try again ");
                 }
 
-            }
-            catch (Exception ex)
-            {
+           }
+           catch (Exception ex)
+           {
                 MessageBox.Show(ex.Message);
-            }
+           }
         }
     }
 }

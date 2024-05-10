@@ -25,14 +25,52 @@ namespace LMS__FINAL_
 
         private void btnFindStudent_Click(object sender, EventArgs e)
         {
-           try
+            try
             {
+                if (txtFindStudent.Text.Trim() !="")
+                {
+                    StreamReader sr = new StreamReader("StudentData.txt");
+                    string line;
+                    bool found = false;
+                    do
+                    {
+                        line = sr.ReadLine();
+                        if (line != null)
+                        {
+                            string[] Student = line.Split(";");
+                            if (Student[0] == txtFindStudent.Text)
+                            {
+                               lblStudentFindName.Text = Student[1];
+                               lblStudentFindId.Text = Student[0];  
+                                found = true;
+                                break;
+                            }
+                        }
+
+                    } while (line != null);
+
+                    sr.Close();
+
+                    if (!found)
+                    {
+                        MessageBox.Show("Please Enter ISBN and try again ");
+                        txtFindStudent.Focus();
+                        txtFindStudent.SelectAll();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Please Enter ISBN and try again ");
+                }
 
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show();
+                MessageBox.Show(ex.Message);
             }
         }
+           
+        
     }
 }
