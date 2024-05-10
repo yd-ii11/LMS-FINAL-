@@ -27,7 +27,7 @@ namespace LMS__FINAL_
         {
             try
             {
-                if (txtId.Text.Trim() == "" || txtId.Text.Trim() == "" || txtId.Text.Trim() == "")
+                if (txtId.Text.Trim() == "" || txtName.Text.Trim() == "")
                 {
                     MessageBox.Show("Please Enter All data and try again ");
                     txtId.Focus();
@@ -42,9 +42,9 @@ namespace LMS__FINAL_
                         MessageBox.Show("This ID is Exist, Please change And try again");
                         txtId.Focus();
                         txtId.SelectAll();
-
                     }
                     else
+
                     {
                         StreamWriter sw = new StreamWriter("StudentData.txt", true);
                         string strStudent = txtId.Text + ";"

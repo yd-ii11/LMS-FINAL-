@@ -38,6 +38,8 @@
             btnShowAllBooks = new Button();
             btnExitForm3 = new Button();
             label4 = new Label();
+            txtISBN = new TextBox();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -62,7 +64,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(105, 207);
+            label3.Location = new Point(105, 250);
             label3.Name = "label3";
             label3.Size = new Size(69, 20);
             label3.TabIndex = 2;
@@ -86,7 +88,7 @@
             // 
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "Scientific Books", "Religious Books", "Historical Books", "Political Books", "Novels and Stories" });
-            cmbCategory.Location = new Point(223, 199);
+            cmbCategory.Location = new Point(223, 242);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(151, 28);
             cmbCategory.TabIndex = 6;
@@ -134,11 +136,30 @@
             label4.Text = "Add Book";
             label4.TextAlign = ContentAlignment.TopCenter;
             // 
+            // txtISBN
+            // 
+            txtISBN.Location = new Point(223, 202);
+            txtISBN.Name = "txtISBN";
+            txtISBN.Size = new Size(151, 27);
+            txtISBN.TabIndex = 11;
+            txtISBN.TextChanged += textBox1_TextChanged;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(105, 209);
+            label5.Name = "label5";
+            label5.Size = new Size(41, 20);
+            label5.TabIndex = 12;
+            label5.Text = "ISBN";
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(505, 450);
+            Controls.Add(label5);
+            Controls.Add(txtISBN);
             Controls.Add(label4);
             Controls.Add(btnExitForm3);
             Controls.Add(btnShowAllBooks);
@@ -168,5 +189,7 @@
         private Button btnShowAllBooks;
         private Button btnExitForm3;
         private Label label4;
+        private TextBox txtISBN;
+        private Label label5;
     }
 }
