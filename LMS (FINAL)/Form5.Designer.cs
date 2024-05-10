@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            lblTitle = new Label();
-            lblAuthor = new Label();
-            lblISBN = new Label();
-            lblCategory = new Label();
-            txtFindBook = new TextBox();
+            panel2 = new Panel();
             btnFindBook = new Button();
+            txtFindBook = new TextBox();
+            panel3 = new Panel();
             btnExit = new Button();
+            lblCategory = new Label();
+            lblISBN = new Label();
+            lblAuthor = new Label();
+            lblTitle = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -58,6 +58,16 @@
             panel1.Size = new Size(700, 73);
             panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label1.Location = new Point(239, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(224, 37);
+            label1.TabIndex = 0;
+            label1.Text = "Search For Book";
+            // 
             // panel2
             // 
             panel2.AutoSize = true;
@@ -70,6 +80,24 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(700, 309);
             panel2.TabIndex = 1;
+            // 
+            // btnFindBook
+            // 
+            btnFindBook.Cursor = Cursors.Hand;
+            btnFindBook.Location = new Point(533, 33);
+            btnFindBook.Name = "btnFindBook";
+            btnFindBook.Size = new Size(94, 29);
+            btnFindBook.TabIndex = 3;
+            btnFindBook.Text = "Find";
+            btnFindBook.UseVisualStyleBackColor = true;
+            btnFindBook.Click += btnFindBook_Click;
+            // 
+            // txtFindBook
+            // 
+            txtFindBook.Location = new Point(263, 37);
+            txtFindBook.Name = "txtFindBook";
+            txtFindBook.Size = new Size(125, 25);
+            txtFindBook.TabIndex = 2;
             // 
             // panel3
             // 
@@ -88,90 +116,16 @@
             panel3.Size = new Size(700, 206);
             panel3.TabIndex = 0;
             // 
-            // label1
+            // btnExit
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label1.Location = new Point(239, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(224, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Search For Book";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(50, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 19);
-            label2.TabIndex = 1;
-            label2.Text = "ISBN";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(50, 35);
-            label3.Name = "label3";
-            label3.Size = new Size(34, 19);
-            label3.TabIndex = 2;
-            label3.Text = "Title";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(50, 125);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 19);
-            label4.TabIndex = 3;
-            label4.Text = "ISBN";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(50, 81);
-            label5.Name = "label5";
-            label5.Size = new Size(52, 19);
-            label5.TabIndex = 4;
-            label5.Text = "Author";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(50, 164);
-            label6.Name = "label6";
-            label6.Size = new Size(65, 19);
-            label6.TabIndex = 5;
-            label6.Text = "Category";
-            // 
-            // lblTitle
-            // 
-            lblTitle.BorderStyle = BorderStyle.FixedSingle;
-            lblTitle.Location = new Point(223, 35);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(165, 25);
-            lblTitle.TabIndex = 6;
-            lblTitle.Text = " ";
-            lblTitle.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // lblAuthor
-            // 
-            lblAuthor.BorderStyle = BorderStyle.FixedSingle;
-            lblAuthor.Location = new Point(223, 75);
-            lblAuthor.Name = "lblAuthor";
-            lblAuthor.Size = new Size(165, 25);
-            lblAuthor.TabIndex = 7;
-            lblAuthor.Text = " ";
-            lblAuthor.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // lblISBN
-            // 
-            lblISBN.BorderStyle = BorderStyle.FixedSingle;
-            lblISBN.Location = new Point(223, 119);
-            lblISBN.Name = "lblISBN";
-            lblISBN.Size = new Size(165, 25);
-            lblISBN.TabIndex = 8;
-            lblISBN.Text = " ";
-            lblISBN.TextAlign = ContentAlignment.TopCenter;
+            btnExit.Cursor = Cursors.Hand;
+            btnExit.Location = new Point(533, 81);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(111, 63);
+            btnExit.TabIndex = 10;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // lblCategory
             // 
@@ -183,32 +137,80 @@
             lblCategory.Text = " ";
             lblCategory.TextAlign = ContentAlignment.TopCenter;
             // 
-            // txtFindBook
+            // lblISBN
             // 
-            txtFindBook.Location = new Point(263, 37);
-            txtFindBook.Name = "txtFindBook";
-            txtFindBook.Size = new Size(125, 25);
-            txtFindBook.TabIndex = 2;
+            lblISBN.BorderStyle = BorderStyle.FixedSingle;
+            lblISBN.Location = new Point(223, 119);
+            lblISBN.Name = "lblISBN";
+            lblISBN.Size = new Size(165, 25);
+            lblISBN.TabIndex = 8;
+            lblISBN.Text = " ";
+            lblISBN.TextAlign = ContentAlignment.TopCenter;
             // 
-            // btnFindBook
+            // lblAuthor
             // 
-            btnFindBook.Cursor = Cursors.Hand;
-            btnFindBook.Location = new Point(533, 33);
-            btnFindBook.Name = "btnFindBook";
-            btnFindBook.Size = new Size(94, 29);
-            btnFindBook.TabIndex = 3;
-            btnFindBook.Text = "Find";
-            btnFindBook.UseVisualStyleBackColor = true;
+            lblAuthor.BorderStyle = BorderStyle.FixedSingle;
+            lblAuthor.Location = new Point(223, 75);
+            lblAuthor.Name = "lblAuthor";
+            lblAuthor.Size = new Size(165, 25);
+            lblAuthor.TabIndex = 7;
+            lblAuthor.Text = " ";
+            lblAuthor.TextAlign = ContentAlignment.TopCenter;
             // 
-            // btnExit
+            // lblTitle
             // 
-            btnExit.Cursor = Cursors.Hand;
-            btnExit.Location = new Point(533, 81);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(111, 63);
-            btnExit.TabIndex = 10;
-            btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = true;
+            lblTitle.BorderStyle = BorderStyle.FixedSingle;
+            lblTitle.Location = new Point(223, 35);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(165, 25);
+            lblTitle.TabIndex = 6;
+            lblTitle.Text = " ";
+            lblTitle.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(50, 164);
+            label6.Name = "label6";
+            label6.Size = new Size(65, 19);
+            label6.TabIndex = 5;
+            label6.Text = "Category";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(50, 81);
+            label5.Name = "label5";
+            label5.Size = new Size(52, 19);
+            label5.TabIndex = 4;
+            label5.Text = "Author";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(50, 125);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 19);
+            label4.TabIndex = 3;
+            label4.Text = "ISBN";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(50, 35);
+            label3.Name = "label3";
+            label3.Size = new Size(34, 19);
+            label3.TabIndex = 2;
+            label3.Text = "Title";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(50, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 19);
+            label2.TabIndex = 1;
+            label2.Text = "ISBN";
             // 
             // Form5
             // 

@@ -29,5 +29,11 @@ namespace LMS__FINAL_
             Form4 frm4 = new Form4();
             frm4.ShowDialog();
         }
+
+        private void btnFindBook_Click(object sender, EventArgs e)
+        {
+            Form5 frm5 = new Form5();
+            frm5.ShowDialog();
+        }
     }
 }

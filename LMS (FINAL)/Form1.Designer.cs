@@ -102,6 +102,7 @@
             btnFindBook.TabIndex = 4;
             btnFindBook.Text = "Find Book";
             btnFindBook.UseVisualStyleBackColor = false;
+            btnFindBook.Click += btnFindBook_Click;
             // 
             // btnExist
             // 
