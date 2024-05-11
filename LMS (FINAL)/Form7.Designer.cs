@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
             label1 = new Label();
-            btnShowStudents = new Button();
-            btnExitForm7 = new Button();
+            panel2 = new Panel();
             txtShowBooks = new TextBox();
+            panel3 = new Panel();
+            btnExitForm7 = new Button();
+            btnShowStudents = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -49,25 +49,6 @@
             panel1.Size = new Size(900, 90);
             panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(txtShowBooks);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 90);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(900, 428);
-            panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(btnExitForm7);
-            panel3.Controls.Add(btnShowStudents);
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 439);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(900, 79);
-            panel3.TabIndex = 2;
-            // 
             // label1
             // 
             label1.BorderStyle = BorderStyle.FixedSingle;
@@ -79,16 +60,33 @@
             label1.Text = "All Added Books";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // btnShowStudents
+            // panel2
             // 
-            btnShowStudents.BackColor = Color.Teal;
-            btnShowStudents.Location = new Point(161, 23);
-            btnShowStudents.Name = "btnShowStudents";
-            btnShowStudents.Size = new Size(94, 44);
-            btnShowStudents.TabIndex = 0;
-            btnShowStudents.Text = "Show";
-            btnShowStudents.UseVisualStyleBackColor = false;
-            btnShowStudents.Click += btnShowStudents_Click;
+            panel2.Controls.Add(txtShowBooks);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 90);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(900, 428);
+            panel2.TabIndex = 1;
+            // 
+            // txtShowBooks
+            // 
+            txtShowBooks.Dock = DockStyle.Fill;
+            txtShowBooks.Location = new Point(0, 0);
+            txtShowBooks.Multiline = true;
+            txtShowBooks.Name = "txtShowBooks";
+            txtShowBooks.Size = new Size(900, 428);
+            txtShowBooks.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(btnExitForm7);
+            panel3.Controls.Add(btnShowStudents);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, 439);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(900, 79);
+            panel3.TabIndex = 2;
             // 
             // btnExitForm7
             // 
@@ -99,15 +97,18 @@
             btnExitForm7.TabIndex = 1;
             btnExitForm7.Text = "Exit";
             btnExitForm7.UseVisualStyleBackColor = false;
+            btnExitForm7.Click += btnExitForm7_Click;
             // 
-            // txtShowBooks
+            // btnShowStudents
             // 
-            txtShowBooks.Dock = DockStyle.Fill;
-            txtShowBooks.Location = new Point(0, 0);
-            txtShowBooks.Multiline = true;
-            txtShowBooks.Name = "txtShowBooks";
-            txtShowBooks.Size = new Size(900, 428);
-            txtShowBooks.TabIndex = 0;
+            btnShowStudents.BackColor = Color.Teal;
+            btnShowStudents.Location = new Point(161, 23);
+            btnShowStudents.Name = "btnShowStudents";
+            btnShowStudents.Size = new Size(94, 44);
+            btnShowStudents.TabIndex = 0;
+            btnShowStudents.Text = "Show";
+            btnShowStudents.UseVisualStyleBackColor = false;
+            btnShowStudents.Click += btnShowStudents_Click;
             // 
             // Form7
             // 
