@@ -93,5 +93,11 @@ namespace LMS__FINAL_
         {
 
         }
+
+        private void btnShowAllBooks_Click(object sender, EventArgs e)
+        {
+            Form7 frm7 = new Form7();
+            frm7.ShowDialog();
+        }
     }
 }

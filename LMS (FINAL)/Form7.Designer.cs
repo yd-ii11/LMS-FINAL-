@@ -88,6 +88,7 @@
             btnShowStudents.TabIndex = 0;
             btnShowStudents.Text = "Show";
             btnShowStudents.UseVisualStyleBackColor = false;
+            btnShowStudents.Click += btnShowStudents_Click;
             // 
             // btnExitForm7
             // 

@@ -113,6 +113,7 @@
             btnShowAllBooks.TabIndex = 8;
             btnShowAllBooks.Text = "Show All";
             btnShowAllBooks.UseVisualStyleBackColor = true;
+            btnShowAllBooks.Click += btnShowAllBooks_Click;
             // 
             // btnExitForm3
             // 
