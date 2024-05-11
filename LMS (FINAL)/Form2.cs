@@ -69,7 +69,14 @@ namespace LMS__FINAL_
                 MessageBox.Show(ex.Message);
 
             }
-                
+
+
+        }
+
+        private void btnShowAllStudent_Click(object sender, EventArgs e)
+        {
+            Form6 frm6 = new Form6();
+            frm6.ShowDialog();
             
         }
     }

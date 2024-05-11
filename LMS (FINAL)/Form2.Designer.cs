@@ -112,6 +112,7 @@
             btnShowAllStudent.TabIndex = 8;
             btnShowAllStudent.Text = "Show ALL";
             btnShowAllStudent.UseVisualStyleBackColor = false;
+            btnShowAllStudent.Click += btnShowAllStudent_Click;
             // 
             // btnExitForm2
             // 
