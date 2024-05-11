@@ -100,7 +100,7 @@
             // 
             labFindStudent.BorderStyle = BorderStyle.FixedSingle;
             labFindStudent.Font = new Font("Segoe UI", 13F);
-            labFindStudent.Location = new Point(72, 55);
+            labFindStudent.Location = new Point(110, 55);
             labFindStudent.Name = "labFindStudent";
             labFindStudent.Size = new Size(62, 36);
             labFindStudent.TabIndex = 1;
@@ -126,7 +126,7 @@
             btnExitForm4.Cursor = Cursors.Hand;
             btnExitForm4.Location = new Point(441, 81);
             btnExitForm4.Name = "btnExitForm4";
-            btnExitForm4.Size = new Size(109, 29);
+            btnExitForm4.Size = new Size(109, 37);
             btnExitForm4.TabIndex = 4;
             btnExitForm4.Text = "Exit";
             btnExitForm4.UseVisualStyleBackColor = false;

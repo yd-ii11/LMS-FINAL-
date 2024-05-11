@@ -43,7 +43,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonHighlight;
             label1.Font = new Font("Segoe UI", 25F);
-            label1.ForeColor = SystemColors.ActiveCaption;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(271, 18);
             label1.Name = "label1";
             label1.Size = new Size(258, 57);
@@ -72,6 +72,7 @@
             // 
             // txtId
             // 
+            txtId.BackColor = Color.White;
             txtId.Font = new Font("Segoe UI", 12F);
             txtId.Location = new Point(271, 118);
             txtId.Name = "txtId";
@@ -80,6 +81,7 @@
             // 
             // txtName
             // 
+            txtName.BackColor = Color.White;
             txtName.Font = new Font("Segoe UI", 12F);
             txtName.Location = new Point(271, 165);
             txtName.Name = "txtName";
@@ -88,10 +90,10 @@
             // 
             // btnAddNewStudent
             // 
-            btnAddNewStudent.BackColor = SystemColors.ActiveCaption;
+            btnAddNewStudent.BackColor = Color.White;
             btnAddNewStudent.Cursor = Cursors.Hand;
             btnAddNewStudent.Font = new Font("Segoe UI", 11F);
-            btnAddNewStudent.ForeColor = SystemColors.ButtonHighlight;
+            btnAddNewStudent.ForeColor = SystemColors.ActiveCaptionText;
             btnAddNewStudent.Location = new Point(212, 284);
             btnAddNewStudent.Name = "btnAddNewStudent";
             btnAddNewStudent.Size = new Size(150, 50);
@@ -102,10 +104,10 @@
             // 
             // btnShowAllStudent
             // 
-            btnShowAllStudent.BackColor = SystemColors.ActiveCaption;
+            btnShowAllStudent.BackColor = Color.White;
             btnShowAllStudent.Cursor = Cursors.Hand;
             btnShowAllStudent.Font = new Font("Segoe UI", 11F);
-            btnShowAllStudent.ForeColor = SystemColors.ButtonHighlight;
+            btnShowAllStudent.ForeColor = SystemColors.ActiveCaptionText;
             btnShowAllStudent.Location = new Point(438, 284);
             btnShowAllStudent.Name = "btnShowAllStudent";
             btnShowAllStudent.Size = new Size(150, 50);
@@ -116,10 +118,10 @@
             // 
             // btnExitForm2
             // 
-            btnExitForm2.BackColor = SystemColors.ActiveCaption;
+            btnExitForm2.BackColor = Color.Red;
             btnExitForm2.Cursor = Cursors.Hand;
             btnExitForm2.Font = new Font("Segoe UI", 11F);
-            btnExitForm2.ForeColor = SystemColors.ButtonHighlight;
+            btnExitForm2.ForeColor = SystemColors.ActiveCaptionText;
             btnExitForm2.Location = new Point(325, 391);
             btnExitForm2.Name = "btnExitForm2";
             btnExitForm2.Size = new Size(150, 50);
@@ -132,7 +134,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
             Controls.Add(btnExitForm2);
             Controls.Add(btnShowAllStudent);

@@ -117,13 +117,14 @@
             // 
             // btnExitForm3
             // 
+            btnExitForm3.BackColor = Color.Red;
             btnExitForm3.Cursor = Cursors.Hand;
             btnExitForm3.Location = new Point(209, 371);
             btnExitForm3.Name = "btnExitForm3";
             btnExitForm3.Size = new Size(94, 38);
             btnExitForm3.TabIndex = 9;
             btnExitForm3.Text = "Exit";
-            btnExitForm3.UseVisualStyleBackColor = true;
+            btnExitForm3.UseVisualStyleBackColor = false;
             btnExitForm3.Click += btnExitForm3_Click;
             // 
             // label4

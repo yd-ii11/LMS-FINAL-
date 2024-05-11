@@ -96,7 +96,7 @@
             // 
             txtFindBook.Location = new Point(263, 37);
             txtFindBook.Name = "txtFindBook";
-            txtFindBook.Size = new Size(125, 25);
+            txtFindBook.Size = new Size(140, 25);
             txtFindBook.TabIndex = 2;
             // 
             // panel3

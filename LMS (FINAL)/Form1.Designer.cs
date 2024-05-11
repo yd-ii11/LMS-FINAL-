@@ -41,7 +41,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonHighlight;
             label1.Font = new Font("Segoe UI", 21F);
-            label1.ForeColor = SystemColors.ActiveCaption;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(173, 61);
             label1.Name = "label1";
             label1.Size = new Size(470, 47);
@@ -50,10 +50,10 @@
             // 
             // btnAddStudent
             // 
-            btnAddStudent.BackColor = SystemColors.ActiveCaption;
+            btnAddStudent.BackColor = Color.White;
             btnAddStudent.Cursor = Cursors.Hand;
             btnAddStudent.Font = new Font("Segoe UI", 11F);
-            btnAddStudent.ForeColor = SystemColors.ButtonHighlight;
+            btnAddStudent.ForeColor = SystemColors.ActiveCaptionText;
             btnAddStudent.Location = new Point(48, 275);
             btnAddStudent.Name = "btnAddStudent";
             btnAddStudent.Size = new Size(150, 50);
@@ -64,10 +64,10 @@
             // 
             // btnAddBook
             // 
-            btnAddBook.BackColor = SystemColors.ActiveCaption;
+            btnAddBook.BackColor = Color.White;
             btnAddBook.Cursor = Cursors.Hand;
             btnAddBook.Font = new Font("Segoe UI", 11F);
-            btnAddBook.ForeColor = SystemColors.ButtonHighlight;
+            btnAddBook.ForeColor = SystemColors.ActiveCaptionText;
             btnAddBook.Location = new Point(233, 275);
             btnAddBook.Name = "btnAddBook";
             btnAddBook.Size = new Size(150, 50);
@@ -78,10 +78,10 @@
             // 
             // btnFindStudent
             // 
-            btnFindStudent.BackColor = SystemColors.ActiveCaption;
+            btnFindStudent.BackColor = Color.White;
             btnFindStudent.Cursor = Cursors.Hand;
             btnFindStudent.Font = new Font("Segoe UI", 11F);
-            btnFindStudent.ForeColor = SystemColors.ButtonHighlight;
+            btnFindStudent.ForeColor = SystemColors.ActiveCaptionText;
             btnFindStudent.Location = new Point(418, 275);
             btnFindStudent.Name = "btnFindStudent";
             btnFindStudent.Size = new Size(150, 50);
@@ -92,10 +92,10 @@
             // 
             // btnFindBook
             // 
-            btnFindBook.BackColor = SystemColors.ActiveCaption;
+            btnFindBook.BackColor = Color.White;
             btnFindBook.Cursor = Cursors.Hand;
             btnFindBook.Font = new Font("Segoe UI", 11F);
-            btnFindBook.ForeColor = SystemColors.ButtonHighlight;
+            btnFindBook.ForeColor = SystemColors.ActiveCaptionText;
             btnFindBook.Location = new Point(603, 275);
             btnFindBook.Name = "btnFindBook";
             btnFindBook.Size = new Size(150, 50);
@@ -122,7 +122,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
             Controls.Add(btnExist);
             Controls.Add(btnFindBook);
