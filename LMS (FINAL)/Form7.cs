@@ -20,11 +20,19 @@ namespace LMS__FINAL_
 
         private void btnShowStudents_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader("BooksData.txt");
-            string allbooks = sr.ReadToEnd();
-            sr.Close();
-            txtShowBooks.Text = allbooks;
+            try
+            {
 
+                StreamReader sr = new StreamReader("BooksData.txt");
+                string allbooks = sr.ReadToEnd();
+                sr.Close();
+                txtShowBooks.Text = allbooks;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
