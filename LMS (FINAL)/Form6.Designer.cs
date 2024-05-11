@@ -31,10 +31,10 @@
             panel2 = new Panel();
             label1 = new Label();
             panel1 = new Panel();
-            panel3 = new Panel();
             txtShowStudent = new TextBox();
+            panel3 = new Panel();
+            btnExitForm6 = new Button();
             button1 = new Button();
-            button2 = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -70,16 +70,6 @@
             panel1.Size = new Size(900, 435);
             panel1.TabIndex = 3;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button1);
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 418);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(900, 100);
-            panel3.TabIndex = 4;
-            // 
             // txtShowStudent
             // 
             txtShowStudent.Dock = DockStyle.Fill;
@@ -88,6 +78,28 @@
             txtShowStudent.Name = "txtShowStudent";
             txtShowStudent.Size = new Size(900, 435);
             txtShowStudent.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(btnExitForm6);
+            panel3.Controls.Add(button1);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, 418);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(900, 100);
+            panel3.TabIndex = 4;
+            // 
+            // btnExitForm6
+            // 
+            btnExitForm6.BackColor = Color.Red;
+            btnExitForm6.Cursor = Cursors.Hand;
+            btnExitForm6.Location = new Point(640, 21);
+            btnExitForm6.Name = "btnExitForm6";
+            btnExitForm6.Size = new Size(101, 51);
+            btnExitForm6.TabIndex = 1;
+            btnExitForm6.Text = "Exit";
+            btnExitForm6.UseVisualStyleBackColor = false;
+            btnExitForm6.Click += btnExitForm6_Click;
             // 
             // button1
             // 
@@ -99,17 +111,7 @@
             button1.TabIndex = 0;
             button1.Text = "Show";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Cursor = Cursors.Hand;
-            button2.Location = new Point(640, 21);
-            button2.Name = "button2";
-            button2.Size = new Size(101, 51);
-            button2.TabIndex = 1;
-            button2.Text = "Exit";
-            button2.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form6
             // 
@@ -137,7 +139,7 @@
         private Panel panel1;
         private TextBox txtShowStudent;
         private Panel panel3;
-        private Button button2;
+        private Button btnExitForm6;
         private Button button1;
     }
 }
