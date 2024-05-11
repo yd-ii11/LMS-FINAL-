@@ -73,6 +73,7 @@
             // txtShowStudent
             // 
             txtShowStudent.Dock = DockStyle.Fill;
+            txtShowStudent.Font = new Font("Segoe UI", 12F);
             txtShowStudent.Location = new Point(0, 0);
             txtShowStudent.Multiline = true;
             txtShowStudent.Name = "txtShowStudent";
