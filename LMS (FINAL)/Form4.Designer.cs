@@ -51,7 +51,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(562, 72);
+            panel1.Size = new Size(780, 72);
             panel1.TabIndex = 0;
             // 
             // lblSearchForStudent
@@ -73,7 +73,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 72);
             panel2.Name = "panel2";
-            panel2.Size = new Size(562, 366);
+            panel2.Size = new Size(780, 378);
             panel2.TabIndex = 1;
             // 
             // txtFindStudent
@@ -115,9 +115,9 @@
             panel3.Controls.Add(lblStudentFindName);
             panel3.Controls.Add(label3);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 150);
+            panel3.Location = new Point(0, 162);
             panel3.Name = "panel3";
-            panel3.Size = new Size(562, 216);
+            panel3.Size = new Size(780, 216);
             panel3.TabIndex = 0;
             // 
             // btnExitForm4
@@ -178,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(562, 438);
+            ClientSize = new Size(780, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 11F);

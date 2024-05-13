@@ -45,7 +45,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(105, 120);
+            label1.Location = new Point(256, 120);
             label1.Name = "label1";
             label1.Size = new Size(38, 20);
             label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(105, 165);
+            label2.Location = new Point(256, 165);
             label2.Name = "label2";
             label2.Size = new Size(54, 20);
             label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(105, 250);
+            label3.Location = new Point(256, 250);
             label3.Name = "label3";
             label3.Size = new Size(69, 20);
             label3.TabIndex = 2;
@@ -72,14 +72,14 @@
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(223, 113);
+            txtTitle.Location = new Point(374, 113);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(151, 27);
             txtTitle.TabIndex = 4;
             // 
             // txtAuthor
             // 
-            txtAuthor.Location = new Point(223, 158);
+            txtAuthor.Location = new Point(374, 158);
             txtAuthor.Name = "txtAuthor";
             txtAuthor.Size = new Size(151, 27);
             txtAuthor.TabIndex = 5;
@@ -88,7 +88,7 @@
             // 
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "Scientific Books", "Religious Books", "Historical Books", "Political Books", "Novels and Stories" });
-            cmbCategory.Location = new Point(223, 242);
+            cmbCategory.Location = new Point(374, 242);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(151, 28);
             cmbCategory.TabIndex = 6;
@@ -96,7 +96,7 @@
             // btnAddNewBook
             // 
             btnAddNewBook.Cursor = Cursors.Hand;
-            btnAddNewBook.Location = new Point(140, 296);
+            btnAddNewBook.Location = new Point(291, 296);
             btnAddNewBook.Name = "btnAddNewBook";
             btnAddNewBook.Size = new Size(94, 44);
             btnAddNewBook.TabIndex = 7;
@@ -107,7 +107,7 @@
             // btnShowAllBooks
             // 
             btnShowAllBooks.Cursor = Cursors.Hand;
-            btnShowAllBooks.Location = new Point(280, 296);
+            btnShowAllBooks.Location = new Point(431, 296);
             btnShowAllBooks.Name = "btnShowAllBooks";
             btnShowAllBooks.Size = new Size(94, 44);
             btnShowAllBooks.TabIndex = 8;
@@ -119,7 +119,7 @@
             // 
             btnExitForm3.BackColor = Color.Red;
             btnExitForm3.Cursor = Cursors.Hand;
-            btnExitForm3.Location = new Point(209, 371);
+            btnExitForm3.Location = new Point(360, 371);
             btnExitForm3.Name = "btnExitForm3";
             btnExitForm3.Size = new Size(94, 38);
             btnExitForm3.TabIndex = 9;
@@ -131,7 +131,7 @@
             // 
             label4.BorderStyle = BorderStyle.FixedSingle;
             label4.Font = new Font("Segoe UI", 16F);
-            label4.Location = new Point(150, 39);
+            label4.Location = new Point(301, 39);
             label4.Name = "label4";
             label4.Size = new Size(224, 42);
             label4.TabIndex = 10;
@@ -140,7 +140,7 @@
             // 
             // txtISBN
             // 
-            txtISBN.Location = new Point(223, 202);
+            txtISBN.Location = new Point(374, 202);
             txtISBN.Name = "txtISBN";
             txtISBN.Size = new Size(151, 27);
             txtISBN.TabIndex = 11;
@@ -149,7 +149,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(105, 209);
+            label5.Location = new Point(256, 209);
             label5.Name = "label5";
             label5.Size = new Size(41, 20);
             label5.TabIndex = 12;
@@ -159,7 +159,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(505, 450);
+            ClientSize = new Size(780, 450);
             Controls.Add(label5);
             Controls.Add(txtISBN);
             Controls.Add(label4);

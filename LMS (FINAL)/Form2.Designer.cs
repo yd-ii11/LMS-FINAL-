@@ -135,7 +135,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(780, 450);
             Controls.Add(btnExitForm2);
             Controls.Add(btnShowAllStudent);
             Controls.Add(btnAddNewStudent);

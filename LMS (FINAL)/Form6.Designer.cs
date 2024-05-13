@@ -46,7 +46,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(900, 83);
+            panel2.Size = new Size(780, 83);
             panel2.TabIndex = 2;
             // 
             // label1
@@ -54,7 +54,7 @@
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.FlatStyle = FlatStyle.System;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.Location = new Point(294, 19);
+            label1.Location = new Point(236, 19);
             label1.Name = "label1";
             label1.Size = new Size(308, 47);
             label1.TabIndex = 1;
@@ -67,7 +67,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 83);
             panel1.Name = "panel1";
-            panel1.Size = new Size(900, 435);
+            panel1.Size = new Size(780, 367);
             panel1.TabIndex = 3;
             // 
             // txtShowStudent
@@ -77,7 +77,7 @@
             txtShowStudent.Location = new Point(0, 0);
             txtShowStudent.Multiline = true;
             txtShowStudent.Name = "txtShowStudent";
-            txtShowStudent.Size = new Size(900, 435);
+            txtShowStudent.Size = new Size(780, 367);
             txtShowStudent.TabIndex = 0;
             // 
             // panel3
@@ -85,16 +85,16 @@
             panel3.Controls.Add(btnExitForm6);
             panel3.Controls.Add(button1);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 418);
+            panel3.Location = new Point(0, 350);
             panel3.Name = "panel3";
-            panel3.Size = new Size(900, 100);
+            panel3.Size = new Size(780, 100);
             panel3.TabIndex = 4;
             // 
             // btnExitForm6
             // 
             btnExitForm6.BackColor = Color.Red;
             btnExitForm6.Cursor = Cursors.Hand;
-            btnExitForm6.Location = new Point(640, 21);
+            btnExitForm6.Location = new Point(584, 21);
             btnExitForm6.Name = "btnExitForm6";
             btnExitForm6.Size = new Size(101, 51);
             btnExitForm6.TabIndex = 1;
@@ -106,7 +106,7 @@
             // 
             button1.BackColor = Color.Teal;
             button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(152, 21);
+            button1.Location = new Point(96, 21);
             button1.Name = "button1";
             button1.Size = new Size(112, 51);
             button1.TabIndex = 0;
@@ -119,7 +119,7 @@
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(900, 518);
+            ClientSize = new Size(780, 450);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);

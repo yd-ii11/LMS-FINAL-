@@ -47,6 +47,7 @@
             label1.Size = new Size(470, 47);
             label1.TabIndex = 0;
             label1.Text = "Library Management System ";
+            label1.Click += label1_Click;
             // 
             // btnAddStudent
             // 
@@ -54,7 +55,7 @@
             btnAddStudent.Cursor = Cursors.Hand;
             btnAddStudent.Font = new Font("Segoe UI", 11F);
             btnAddStudent.ForeColor = SystemColors.ActiveCaptionText;
-            btnAddStudent.Location = new Point(48, 275);
+            btnAddStudent.Location = new Point(38, 275);
             btnAddStudent.Name = "btnAddStudent";
             btnAddStudent.Size = new Size(150, 50);
             btnAddStudent.TabIndex = 1;
@@ -68,7 +69,7 @@
             btnAddBook.Cursor = Cursors.Hand;
             btnAddBook.Font = new Font("Segoe UI", 11F);
             btnAddBook.ForeColor = SystemColors.ActiveCaptionText;
-            btnAddBook.Location = new Point(233, 275);
+            btnAddBook.Location = new Point(223, 275);
             btnAddBook.Name = "btnAddBook";
             btnAddBook.Size = new Size(150, 50);
             btnAddBook.TabIndex = 2;
@@ -82,7 +83,7 @@
             btnFindStudent.Cursor = Cursors.Hand;
             btnFindStudent.Font = new Font("Segoe UI", 11F);
             btnFindStudent.ForeColor = SystemColors.ActiveCaptionText;
-            btnFindStudent.Location = new Point(418, 275);
+            btnFindStudent.Location = new Point(408, 275);
             btnFindStudent.Name = "btnFindStudent";
             btnFindStudent.Size = new Size(150, 50);
             btnFindStudent.TabIndex = 3;
@@ -96,7 +97,7 @@
             btnFindBook.Cursor = Cursors.Hand;
             btnFindBook.Font = new Font("Segoe UI", 11F);
             btnFindBook.ForeColor = SystemColors.ActiveCaptionText;
-            btnFindBook.Location = new Point(603, 275);
+            btnFindBook.Location = new Point(593, 275);
             btnFindBook.Name = "btnFindBook";
             btnFindBook.Size = new Size(150, 50);
             btnFindBook.TabIndex = 4;
@@ -123,7 +124,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(780, 450);
             Controls.Add(btnExist);
             Controls.Add(btnFindBook);
             Controls.Add(btnFindStudent);

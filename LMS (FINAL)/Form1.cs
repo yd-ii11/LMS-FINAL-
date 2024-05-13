@@ -35,5 +35,10 @@ namespace LMS__FINAL_
             Form5 frm5 = new Form5();
             frm5.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

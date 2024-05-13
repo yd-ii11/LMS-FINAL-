@@ -55,7 +55,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(700, 73);
+            panel1.Size = new Size(780, 73);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -78,13 +78,13 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 73);
             panel2.Name = "panel2";
-            panel2.Size = new Size(700, 309);
+            panel2.Size = new Size(780, 377);
             panel2.TabIndex = 1;
             // 
             // btnFindBook
             // 
             btnFindBook.Cursor = Cursors.Hand;
-            btnFindBook.Location = new Point(533, 33);
+            btnFindBook.Location = new Point(585, 33);
             btnFindBook.Name = "btnFindBook";
             btnFindBook.Size = new Size(94, 29);
             btnFindBook.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             // txtFindBook
             // 
-            txtFindBook.Location = new Point(263, 37);
+            txtFindBook.Location = new Point(315, 37);
             txtFindBook.Name = "txtFindBook";
             txtFindBook.Size = new Size(140, 25);
             txtFindBook.TabIndex = 2;
@@ -111,16 +111,16 @@
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 103);
+            panel3.Location = new Point(0, 171);
             panel3.Name = "panel3";
-            panel3.Size = new Size(700, 206);
+            panel3.Size = new Size(780, 206);
             panel3.TabIndex = 0;
             // 
             // btnExit
             // 
             btnExit.BackColor = Color.Red;
             btnExit.Cursor = Cursors.Hand;
-            btnExit.Location = new Point(533, 81);
+            btnExit.Location = new Point(576, 81);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(111, 63);
             btnExit.TabIndex = 10;
@@ -131,7 +131,7 @@
             // lblCategory
             // 
             lblCategory.BorderStyle = BorderStyle.FixedSingle;
-            lblCategory.Location = new Point(223, 158);
+            lblCategory.Location = new Point(266, 158);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(165, 25);
             lblCategory.TabIndex = 9;
@@ -141,7 +141,7 @@
             // lblISBN
             // 
             lblISBN.BorderStyle = BorderStyle.FixedSingle;
-            lblISBN.Location = new Point(223, 119);
+            lblISBN.Location = new Point(266, 119);
             lblISBN.Name = "lblISBN";
             lblISBN.Size = new Size(165, 25);
             lblISBN.TabIndex = 8;
@@ -151,7 +151,7 @@
             // lblAuthor
             // 
             lblAuthor.BorderStyle = BorderStyle.FixedSingle;
-            lblAuthor.Location = new Point(223, 75);
+            lblAuthor.Location = new Point(266, 75);
             lblAuthor.Name = "lblAuthor";
             lblAuthor.Size = new Size(165, 25);
             lblAuthor.TabIndex = 7;
@@ -161,7 +161,7 @@
             // lblTitle
             // 
             lblTitle.BorderStyle = BorderStyle.FixedSingle;
-            lblTitle.Location = new Point(223, 35);
+            lblTitle.Location = new Point(266, 35);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(165, 25);
             lblTitle.TabIndex = 6;
@@ -171,7 +171,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(50, 164);
+            label6.Location = new Point(93, 164);
             label6.Name = "label6";
             label6.Size = new Size(65, 19);
             label6.TabIndex = 5;
@@ -180,7 +180,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(50, 81);
+            label5.Location = new Point(93, 81);
             label5.Name = "label5";
             label5.Size = new Size(52, 19);
             label5.TabIndex = 4;
@@ -189,7 +189,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(50, 125);
+            label4.Location = new Point(93, 125);
             label4.Name = "label4";
             label4.Size = new Size(38, 19);
             label4.TabIndex = 3;
@@ -198,7 +198,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(50, 35);
+            label3.Location = new Point(93, 35);
             label3.Name = "label3";
             label3.Size = new Size(34, 19);
             label3.TabIndex = 2;
@@ -207,7 +207,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(50, 38);
+            label2.Location = new Point(102, 38);
             label2.Name = "label2";
             label2.Size = new Size(38, 19);
             label2.TabIndex = 1;
@@ -217,7 +217,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 382);
+            ClientSize = new Size(780, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 8F);
